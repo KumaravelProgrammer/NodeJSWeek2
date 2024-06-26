@@ -1,0 +1,29 @@
+const users = [
+  {
+    name: "john",
+    kidneys: [
+      {
+        healthy: true,
+      },
+    ],
+  },
+];
+
+  const johnKidney = users[0].kidneys;
+  console.log(johnKidney);
+  const numberOfKidneys = johnKidney.length;
+  console.log(numberOfKidneys)
+  let numberOfHealthyKidneys = 0;
+  for (i = 0; i < johnKidney.length; i++) {
+    if (johnKidney[i].healthy) {
+      console.log(numberOfHealthyKidneys)
+      numberOfHealthyKidneys = numberOfHealthyKidneys + 1;
+      console.log(numberOfHealthyKidneys)
+
+    }
+  }
+  const numberUnOfHealthyKidneys = numberOfKidneys - numberOfHealthyKidneys;
+  
+   console.log(  johnKidney,
+    numberOfHealthyKidneys,
+    numberUnOfHealthyKidneys)
